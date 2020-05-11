@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         onlyExtPublicDirBtn.setOnClickListener {
-            //Will throw IOException when running Android Q+ .
+            //Will throw IOException when running Android Q+.
             getImageAsFile(File(getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), FILE_NAME))?.let {
                 shareFile(it)
             }
